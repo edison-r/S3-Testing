@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# S3-Testing
-=======
 # Sprint 3 IT Academy | Video management tool
 
 ## Introduction
@@ -87,4 +84,3 @@ an array of information about 250 movies.
 - Don't forget to include the capture of the test results in the virtual campus.
 
 
->>>>>>> fdd6711 (Initial commit)

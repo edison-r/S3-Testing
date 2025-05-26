@@ -249,7 +249,7 @@ describe('Function "orderAlphabetically"', () => {
     ]);
   });
 });
-/*
+
 // Exercise 5
 describe('Function "orderByYear"', () => {
   it('should be declared', () => {
@@ -289,7 +289,7 @@ describe('Function "orderByYear"', () => {
     ]);
   });
 });
-
+/*
 // Exercise 6
 // YOUR CODE HERE. Test moviesAverageByCategory()
 describe('Function "moviesAverageByCategory"', () => {

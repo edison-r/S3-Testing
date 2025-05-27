@@ -293,10 +293,178 @@ describe('Function "orderByYear"', () => {
 // Exercise 6
 // YOUR CODE HERE. Test moviesAverageByCategory()
 describe('Function "moviesAverageByCategory"', () => {
-  it('ADD YOUR CODE IN films.spec.js file', () => {
-    expect(typeof hoursToMinutes).toBe('coffee');
+  it('should be declared', () => {
+    expect(typeof orderByYear).toBe('function');
+  });
+  it('should return a number', () => {
+    expect(typeof moviesAverageByCategory(movies, 'Drama')).toBe('number');
+  });
+  it('should be different from NaN', () => {
+    expect(moviesAverageByCategory(movies, 'Drama')).not.toBeNaN();
+  });
+  it(' should return the average score of movies selecting only the category films. With 2 decimals! ', () => {
+    expect(
+      moviesAverageByCategory(
+        [
+          {
+            title: 'Fight Club',
+            year: 1999,
+            director: 'David Fincher',
+            duration: '2h 19min',
+            genre: [ 'Drama' ],
+            score: 8.8
+          },
+          {
+            title: 'One Flew Over the Cuckoo"s Nest',
+            year: 1975,
+            director: 'Milos Forman',
+            duration: '2h 13min',
+            genre: [ 'Drama' ],
+            score: 8.7
+          },
+          {
+            title: 'Nuovo Cinema Paradiso',
+            year: 1988,
+            director: 'Giuseppe Tornatore',
+            duration: '2h 35min',
+            genre: [ 'Drama' ],
+            score: 8.5
+          },
+          {
+            title: 'Requiem for a Dream',
+            year: 2000,
+            director: 'Darren Aronofsky',
+            duration: '1h 42min',
+            genre: [ 'Drama' ],
+            score: 8.3
+          },
+          {
+            title: 'Ladri di biciclette',
+            year: 1948,
+            director: 'Vittorio De Sica',
+            duration: '1h 29min',
+            genre: [ 'Drama' ],
+            score: 8.3
+          },
+          {
+            title: 'Good Will Hunting',
+            year: 1997,
+            director: 'Gus Van Sant',
+            duration: '2h 6min',
+            genre: [ 'Drama' ],
+            score: 8.3
+          },
+          {
+            title: 'Jagten',
+            year: 2012,
+            director: 'Thomas Vinterberg',
+            duration: '1h 55min',
+            genre: [ 'Drama' ],
+            score: 8.3
+          },
+          {
+            title: 'All About Eve',
+            year: 1950,
+            director: 'Joseph L. Mankiewicz',
+            duration: '2h 18min',
+            genre: [ 'Drama' ],
+            score: 8.3
+          },
+          {
+            title: 'Babam ve Oglum',
+            year: 2005,
+            director: 'Çagan Irmak',
+            duration: '1h 48min',
+            genre: [ 'Drama' ],
+            score: 8.5
+          },
+          {
+            title: 'Ikiru',
+            year: 1952,
+            director: 'Akira Kurosawa',
+            duration: '2h 23min',
+            genre: [ 'Drama' ],
+            score: 8.3
+          },
+          {
+            title: 'Room',
+            year: 2015,
+            director: 'Lenny Abrahamson',
+            duration: '1h 58min',
+            genre: [ 'Drama' ],
+            score: 8.2
+          },
+          {
+            title: 'Trainspotting',
+            year: 1996,
+            director: 'Danny Boyle',
+            duration: '1h 34min',
+            genre: [ 'Drama' ],
+            score: 8.2
+          },
+          {
+            title: 'Gran Torino',
+            year: 2008,
+            director: 'Clint Eastwood',
+            duration: '1h 56min',
+            genre: [ 'Drama' ],
+            score: 8.2
+          },
+          {
+            title: 'Tôkyô monogatari',
+            year: 1953,
+            director: 'Yasujirô Ozu',
+            duration: '2h 16min',
+            genre: [ 'Drama' ],
+            score: 8.2
+          },
+          {
+            title: 'Network',
+            year: 1976,
+            director: 'Sidney Lumet',
+            duration: '2h 1min',
+            genre: [ 'Drama' ],
+            score: 8.1
+          },
+          {
+            title: 'Le notti di Cabiria',
+            year: 1957,
+            director: 'Federico Fellini',
+            duration: '1h 50min',
+            genre: [ 'Drama' ],
+            score: 8.2
+          },
+          {
+            title: '8½',
+            year: 1963,
+            director: 'Federico Fellini',
+            duration: '2h 18min',
+            genre: [ 'Drama' ],
+            score: 8.1
+          },
+          {
+            title: 'Paris, Texas',
+            year: 1984,
+            director: 'Wim Wenders',
+            duration: '2h 25min',
+            genre: [ 'Drama' ],
+            score: 8.1
+          },
+          {
+            title: 'The Help',
+            year: 2011,
+            director: 'Tate Taylor',
+            duration: '2h 26min',
+            genre: [ 'Drama' ],
+            score: 8.1
+          }
+        ],
+        'Drama'
+      )
+    ).toBe(8.3);
   });
 });
+
 /*
 // Exercise 7
 describe('Function "hoursToMinutes"', () => {

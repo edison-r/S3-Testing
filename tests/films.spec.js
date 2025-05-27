@@ -302,7 +302,7 @@ describe('Function "moviesAverageByCategory"', () => {
   it('should be different from NaN', () => {
     expect(moviesAverageByCategory(movies, 'Drama')).not.toBeNaN();
   });
-  it(' should return the average score of movies selecting only the category films. With 2 decimals! ', () => {
+  it('should return the average score of movies selecting only the category films. With 2 decimals! ', () => {
     expect(
       moviesAverageByCategory(
         [
@@ -465,7 +465,6 @@ describe('Function "moviesAverageByCategory"', () => {
   });
 });
 
-/*
 // Exercise 7
 describe('Function "hoursToMinutes"', () => {
   it('should be declared', () => {
@@ -499,7 +498,7 @@ describe('Function "hoursToMinutes"', () => {
     expect(hoursToMinutes(movieTry)[0].duration).toBe(120);
   });
 });
-
+/*
 // Exercise 8
 describe('Function "bestFilmOfYear"', () => {
   it('should be declared', () => {

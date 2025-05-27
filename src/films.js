@@ -52,15 +52,31 @@ function moviesAverageByCategory(array, category) {
 }
 
 // Exercise 7: Modify the duration of movies to minutes
-function hoursToMinutes() {
+function hoursToMinutes(movies) {
+  return movies.map((movie) => {
+    const newArray = { ...movie };
+    let totalMinutes = 0;
+    const duration = movie.duration;
 
+    if(duration.includes('h')){
+      const hours = parseInt(duration.split('h')[0]);
+      totalMinutes += hours * 60;
+    }
+
+    if(duration.includes('min')){
+      const min = parseInt(duration.split('h')[1]);
+      totalMinutes += min;
+    }
+
+    newArray.duration = totalMinutes;
+    return newArray;
+  });
 }
 
 // Exercise 8: Get the best film of a year
 function bestFilmOfYear() {
   
 }
-
 
 
 // The following is required to make unit tests work.

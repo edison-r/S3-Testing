@@ -289,7 +289,7 @@ describe('Function "orderByYear"', () => {
     ]);
   });
 });
-/*
+
 // Exercise 6
 // YOUR CODE HERE. Test moviesAverageByCategory()
 describe('Function "moviesAverageByCategory"', () => {
@@ -297,7 +297,7 @@ describe('Function "moviesAverageByCategory"', () => {
     expect(typeof hoursToMinutes).toBe('coffee');
   });
 });
-
+/*
 // Exercise 7
 describe('Function "hoursToMinutes"', () => {
   it('should be declared', () => {
